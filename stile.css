@@ -1,0 +1,720 @@
+body{
+	font-family:"Courier New", Courier, monospace;
+}
+
+/*----------------------------------------------------------PRIMA PAGINA*/
+#uno{
+	width:100%;
+	height:100%;
+	background-image:url(img/sfondo1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	
+}
+
+#titolo_menu{
+	width: 50%;
+	height: 100%;
+	float:left;
+}
+
+
+
+/*TITOLO*/
+#titolo{
+	margin: 20% 0px 0px 0px;
+	height: 23%;
+	background-image: url(img/granmadre_title.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position:center;
+	max-width: 100%;
+	max-height: 30%;
+}
+
+#titolo:hover{
+}
+
+h1{
+	text-indent:-9999px;
+}
+
+/*MENU*/
+
+#menu{
+	font-family:"Courier New", Courier, monospace;
+	font-size: 27px;
+	width:100%;
+	text-align:center;
+	padding: 0px 0px 0px 5%;
+	text-decoration:none;
+	margin-top: 15%;
+	
+	position:relative;
+	z-index:1000;
+}
+
+.elemento_menu{
+	text-decoration:none;
+	color:#FFF;
+	text-shadow: 2px 2px rgba(20, 20, 20, 1);
+}
+
+.elemento_menu:hover{
+	color:rgba(255, 255, 250, 0.8);
+
+}
+
+.linea_menu{
+	width: 38%;
+}
+
+
+/*PIE DI PAGINA*/
+
+
+#pie_di_pagina{
+	width: 50%;	
+	text-align:left;
+	font-family:"Courier New", Courier, monospace;
+	font-size:12px;
+	position:absolute;
+	bottom: 3px;
+	left: 1em;
+	z-index:500;
+	text-shadow: 2px 2px rgba(20, 20, 20, 1);
+	
+	
+}
+
+#home_contatti{
+	position:absolute;
+	right: 5px;
+		bottom:5px;
+}
+
+.home_contatti{
+	color:#FFF;
+	font-size: 26px;
+	padding: 3px;
+}
+
+
+/*MODIFICA PER I DEVICE <ipad*/
+@media only screen and (max-width: 1024px) {
+
+	#titolo{
+		margin: 10% 0px 0px 0px;
+		height: 30%;
+		background-image: url(img/granmadre_title.png);
+		background-repeat:no-repeat;
+		background-size: contain;
+		background-position:center;
+		max-width: 99%;
+		max-height: 30%;
+	}
+
+	#menu{
+		
+		font-size: 18px;
+		width:99%;
+		margin-top: 10%;
+
+	}
+
+
+   #pie_di_pagina { 
+   		
+		width:45%;
+   		font-size: 14px;
+   
+   }
+   
+   .home_contatti{
+		font-size:16px;   
+		
+   }
+
+}
+
+
+/*PIETà*/
+
+#pieta{
+	width: 50%;
+	height: 100%;
+	float:right;
+	
+}
+
+#pieta_img{
+	position:absolute;
+	right: 0px;
+	bottom: 0px;
+	max-width: 90%;
+	max-height: 90%;
+	z-index:0;
+	
+	
+}
+
+
+/*------------------------------------------------------------SECONDA PAGINA*/
+
+/*TAGLINE*/
+
+#due{
+	text-align:justify;
+	width:100%;
+	height:100%;
+	background-image:url(img/sfondo_pag2.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+    text-align: center;
+}
+
+#tagline{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style:italic;
+	width:100%;
+	text-align:center;
+	font-size: 2em;
+	
+	padding-top: 1.25em;
+	
+}
+
+#chi_siamo_main{
+	width: 64%;
+	margin-top: 5%;
+	margin-left: 7%;
+    text-align: left;
+
+}
+
+#chi_siamo_main_h2{
+	font-size: 3em;
+	font-family:"Courier New";
+	color:#7ca141;
+}
+
+
+#chi_siamo_main p{
+	font-size:20px;
+    text-align: justify;
+}
+
+
+#fiocco{
+	width: 25%;
+	position:absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+#i_servizi{
+    text-align: justify;
+	width: 64%;
+    margin-left:25%;
+    margin-top:10%;
+}
+
+#i_servizi_h2{
+	font-size: 3em;
+	font-family:"Courier New";
+	color:#7ca141;
+    text-align: right;
+}
+
+#i_servizi p{
+	font-size:20px;
+}
+
+/*MEDIA QUERY PER SMARTPHONE*/
+
+@media only screen and (max-width: 1000px) {
+
+    #due{
+        text-align: center;
+    }
+	
+	#fiocco, #corona{
+		display:none;
+	}
+	
+	#tagline{
+		font-size:15px;
+	}
+
+    #box_testi{
+        width:100%;
+        text-align: center;
+    }
+	
+	#chi_siamo_main h2{
+		font-size: 20px;
+	}
+	
+	#i_servizi h2{
+		font-size:20px;
+	}
+	
+	#chi_siamo_main{
+		width: 70%;
+        margin-left: 15%;
+
+
+    }
+	
+	#chi_siamo_main p{
+		font-size:1em;
+        text-align: justify;
+	}
+	
+	#i_servizi{
+		width: 70%;
+        margin-left: 15%;
+		text-align:left;
+		
+	}
+	
+	#i_servizi p{
+		font-size:1em;
+		text-align:justify;
+	}
+	
+}
+
+
+/*MEDIA QUERY PER HD RES*/
+
+
+@media only screen and (max-width: 1500px)  {
+
+	#chi_siamo_main p{
+		font-size: 15px;
+	}
+	
+	#i_servizi p{
+		font-size: 15px;
+	}
+}
+
+
+@media only screen and (min-width: 1700px)  {
+	
+	#tagline{
+		padding-top: 4em;
+		padding-left: -3em;
+	}
+
+    #due{
+        text-align: center;
+    }
+
+    #box_testi{
+        text-align: center;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+	
+	#chi_siamo_main{
+		width: 100%;
+        padding-top: 5%;
+        margin: 0px;
+		/*position:relative;
+		left: 18%;
+		top: 20%;*/
+	}
+	
+	#i_servizi{
+        text-align: center;
+		width: 100%;
+        padding-top: 6%;
+        margin:0px;
+		/*position:relative;
+		right: 25%;
+		bottom: 28%;*/
+	}
+	
+	#i_servizi p{
+		text-align:justify;
+	}
+	
+
+
+
+}
+
+@media only screen and (max-height: 800px) {
+
+    #tagline{
+        font-size: 1.2em;
+    }
+	
+	
+	
+	i_servizi{
+		margin-top: -10%;
+	}
+	
+	chi_siamo_main{
+		margin-bottom: 0px;
+	}
+	
+	i_servizi_p{
+		font-size:14px;
+	}
+	chi_siamo_main_p{
+		font-size:14px;
+	}
+
+}
+	
+	
+/*---------------------------------------------------------------TERZA PAGINA*/
+
+#tre{
+	width:100%;
+	height:100%;
+	background-image:url(img/sfondo4.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+#contatti_titolo{
+	width:100%;
+	text-align:center;
+	font-size: 2.5em;
+	padding-top: 10%;
+	margin-bottom: 3%;
+	color: #FFF;
+	font-family: "Courier New", Courier, monospace;
+	text-shadow: 2px 2px rgba(20, 20, 20, 1);
+
+
+}
+
+
+#reperibilita{
+	font-size:23px;
+	text-decoration:underline;
+}
+
+.numeri{
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#000;
+
+}
+
+.intestazioni_int{
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-size:25px;
+	color:#000;
+	font-style:italic;
+	
+}
+
+.mailto{
+	text-decoration:none;
+	color:#7ca141;
+	
+	
+}
+
+#contatti_main{
+	width:100%;
+	height: 500px;
+	background-color:#FFF;
+	background-repeat:no-repeat;
+	background-size: cover;
+	padding: 0 13% 0 13%;
+	
+			/*
+			
+			////inserire codice per ombreggiatura
+			
+			*/
+}
+
+
+
+.riquadri_contatti{
+	float:left;
+	width: 24%;
+	height: 80%;
+	margin-top: 3%
+	
+	
+}
+
+#info_interno{
+	
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	font-size: 18px;
+	color:#7ca141;
+	
+}
+
+#info_interno ul{
+	width: 80%;
+	margin: 10%;
+}
+
+#form_interno h4{
+	color:#7ca141;
+	font-size:20px;
+	margin-left:30%;
+	margin-bottom: 10px;
+
+}
+
+placeholder{
+	font-size:16px;
+}
+
+#linea{
+	
+	width: 170px
+	
+}
+
+
+.dati{
+	font-size:16px;
+	width: 30%;
+	height: 30px;
+	margin-top: 3px;
+	margin-left: 8%;
+	background-color:#F7F7F7;
+	background-image: url(img/sfondo3_box.jpg);
+}
+
+#scrivici{
+	font-size:16px;
+	width: 60%;
+	margin-top: 3px;
+	margin-left: 8%;
+	height: 150px;
+	max-width: 80%;
+	max-height: 220px;
+	background-color:#F7F7F7;
+	background-image: url(img/sfondo3_box.jpg);
+	
+}
+
+#send{
+	margin-left: 8%;
+	width: 22%;
+	
+}
+
+#my_map{
+	
+}
+
+#mappa{
+	width: 300px;
+	height: 300px;
+	margin-top: 19px;
+}
+
+
+@media only screen and (max-width: 1270px) {
+
+	
+
+	.riquadri_contatti{
+		margin-top: 6%	
+	}
+
+	#info_interno{
+			font-size:12px;
+	}
+	
+	
+	#form_interno h4{
+		font-size:16px;
+		color:#333;
+		margin-left:30%;
+		margin-bottom: 8px;
+
+	}
+	.dati{
+		width: 30%;
+		height: 24px;
+		margin-top: 4px;
+		margin-left: 8%;
+	}
+
+	#scrivici{
+		width: 60%;
+		margin-top: 4px;
+		margin-left: 8%;
+		height: 100px;
+		max-width: 80%;
+		max-height: 220px;
+	}
+	
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+	#contatti_titolo{
+		font-size:1.8em;
+		padding-top: 7%;
+		margin-bottom: 2.5%;
+	}
+
+	.riquadri_contatti{
+		margin-top: 6%	
+	}
+	
+	
+
+	
+
+
+}
+
+
+
+
+
+/*FLOAT PER SCHERMI MINORI DELL'IPAD*/
+
+
+@media only screen and (max-width: 1000px) {
+	
+	#contatti_titolo{
+		width:100%;
+		text-align:center;
+		font-size: 1.6em;
+		padding-top: 7%;
+		margin-bottom: 2%;
+		
+	
+	
+	}
+	
+	#contatti_main{
+		width:100%;
+		height: 100%;
+		background:#FFF;
+		
+		padding: 0 13% 0 13%;
+	}
+
+	.riquadri_contatti{
+		float:left;
+		width: 300px;
+		height: 350px;
+		margin-top: 0px;
+		
+		
+	}
+	
+	#info_interno{
+	
+		font-family:Georgia, "Times New Roman", Times, serif;
+		text-align:center;
+		font-size: 18px;
+		color:#7ca141;
+		
+	}
+	
+	#info_interno ul{
+		width: 80%;
+		margin: 10%;
+	}
+	
+	#form_interno h4{
+		color:#7ca141;
+		font-size:20px;
+		margin-left:30%;
+		margin-bottom: 10px;
+	
+	}
+	
+	
+	
+	
+	.dati{
+		width: 30%;
+		height: 30px;
+		margin-top: 3px;
+		margin-left: 15%;
+		background-color:#F7F7F7;
+		background-image: url(img/sfondo3_box.jpg);
+	
+	}
+	
+	#scrivici{
+		width: 60%;
+		margin-top: 3px;
+		margin-left: 15%;
+		height: 150px;
+		max-width: 80%;
+		max-height: 220px;
+		background-color:#F7F7F7;
+		background-image: url(img/sfondo3_box.jpg);
+		
+	}
+	
+	#send{
+		margin-left: 15%;
+		width: 22%;
+		
+	}
+	
+	#my_map{
+		
+	}
+	
+	#mappa{
+		width: 300px;
+		height: 300px;
+	}
+	
+	
+	footer{
+		color:#333;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+	#linea{
+	
+	display:none;
+	
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+	
+	text-align:center;
+	font-size:15px;
+	color:#FFF;
+	
+}

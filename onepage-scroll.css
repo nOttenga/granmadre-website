@@ -1,0 +1,168 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+  
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0,0,0,0.65);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 4px;
+  height: 4px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -2px;
+  left: 11px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}
+
+
+.scorri_giu{
+	display:none;
+}
+
+.scorri_su{
+	display:none;
+}
+
+
+
+
+@media only screen and (max-width: 1330px){
+	.onepage-pagination {
+			  position: absolute;
+			  right: 20px;
+			  top: 50%;
+			  z-index: 5;
+			  list-style: none;
+			  margin: 0;
+			  padding: 0;
+	}
+	.onepage-pagination li {
+			  padding: 0;
+			  text-align: center;
+	}
+	.onepage-pagination li a{
+			  padding: 7px;
+			  width: 10px;
+			  height: 10px;
+			  display: block;
+	  
+	}
+	.onepage-pagination li a:before{
+			  content: '';
+			  position: absolute;
+			  width: 10px;
+			  height: 10px;
+			  background: rgba(0,0,0,0.65);
+			  border-radius: 10px;
+			  -webkit-border-radius: 10px;
+			  -moz-border-radius: 10px;
+	}
+	
+	.onepage-pagination li a.active:before{
+			  width: 10px;
+			  height: 10px;
+			  background: none;
+			  border: 1px solid black;
+			  margin-top: -2px;
+			  left: 11px;
+	}
+	
+	
+	/*---------------------------------FRECCE*/
+	
+	.scorri_giu{
+		display:run-in;
+		width: 100px;
+		position:absolute;
+		left:42%;
+		bottom: 1px;
+	}
+	
+	.scorri_su{
+		display:run-in;
+		width: 100px;
+		position:absolute;
+		left:42%;
+		top: 1px;
+	}
+	
+}
